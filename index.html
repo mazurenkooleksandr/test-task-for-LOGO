@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>LOGO</title>
+</head>
+<body class="grid-12">
+<div class="container">
+    <header class="header">
+        <div class="header-container">
+            <a href="#"><img class="logo" src="./src/assets/Logo.svg" alt="logo" width="67px" height="24px"></a>
+            <button class="menu-button" type="button" data-menu-btn></button>
+        </div>
+    </header>
+    <nav class="navigation">
+        <ol class="steplist">
+            <li><span>1</span></li>
+            <li><span>2</span></li>
+            <li><span>3</span></li>
+            <li class="active"><span>4</span></li>
+        </ol>
+    </nav>
+    <main class="main-grid">
+        <section class="description-order-section">
+            <h2 class="section-title">Finish your order</h2>
+            <dl class="description-container">
+                <div>
+                    <dt class="font-light">Plan</dt>
+                    <dd class="font-semibold">Full Pack</dd>
+                </div>
+                <div>
+                    <dt class="font-light">Subscription Period</dt>
+                    <dd class="font-regular">3 months</dd>
+                </div>
+                <div>
+                    <dt class="font-light">1 month price</dt>
+                    <dd class="subscription-price font-medium">$ 29.99</dd>
+                </div>
+            </dl>
+        </section>
+        <section class="payment-card">
+            <button type="submit" class="button apple-pay-button" data-redirect-button>
+                <svg width="49px" height="20px">
+                    <use xlink:href="./src/assets/sprite.svg#applePay"></use>
+                </svg>
+            </button>
+            <h3 class="payment-card-title">Or pay with card</h3>
+            <form id="checkoutForm" data-form class="card-form">
+                <div class="form-group">
+                    <label>Email
+                        <input type="email" class="card-email" name="email" placeholder="examplemail@mail.com" data-form-email>
+                    </label>
+                </div>
+
+                <div class="card-info-container form-group">
+                    <label class="label">Card Information</label>
+                    <ul class="method-payment-list">
+                        <li>
+                            <svg class="method-payment-icon">
+                                <use xlink:href="./src/assets/sprite.svg#mastercard"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="method-payment-icon">
+                                <use xlink:href="./src/assets/sprite.svg#visa"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="method-payment-icon">
+                                <use xlink:href="./src/assets/sprite.svg#americanExpress"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="method-payment-icon">
+                                <use xlink:href="./src/assets/sprite.svg#discover"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                    <div>
+                        <label>
+                            <input type="text" data-form-card class="card-number" name="card-number"
+                               placeholder="0000 0000 0000 0000">
+                        </label>
+                    </div>
+
+                    <div class="container-card-fields">
+                        <div class="card-data-field">
+                            <label>
+                                <input type="text" class="expiry-date-input" name="card-date" data-form-card-date
+                                       placeholder="MM/YYYY">
+                            </label>
+                        </div>
+                        <div class="card-cvv-field">
+                            <label>
+                                <input type="text" class="cvv-input" name="card-cvv" data-form-card-cvv placeholder="CVV">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Name on Card
+                        <input type="text" class="card-holder-name" name="card-holder-name" data-form-name-card
+                               placeholder="Enter cardholder name">
+                    </label>
+                </div>
+
+                <button class="coupon" data-accordion-button>I have a coupon code</button>
+                <div class="promo-container" data-accordion-container>
+                    <div class="form-group">
+                        <label>
+                            <input type="text" class="promo-input" name="promo" data-form-promo-input placeholder="Enter your promo code">
+                        </label>
+                        <div class="success-message" data-success-message></div>
+                    </div>
+                    <button type="button" class="apply-button" data-form-promo-btn>
+                        <img src="./src/assets/Apply%20(1).svg" alt="apply btn" class="promo-img-apply" data-promo-img-apply/>
+                    </button>
+                </div>
+
+                <button type="submit" class="button button-submit-order" data-submit-button>Submit Order</button>
+            </form>
+
+            <section>
+                <h3 class="payment-card-title">Or alternative methods</h3>
+                <button type="button" class="button button-accordion" data-accordion-button>
+                    <div class="icons-container">
+                        <svg class="alternative-method-icon paypal">
+                            <use xlink:href="./src/assets/sprite.svg#paypal"></use>
+                        </svg>
+                        <svg class="alternative-method-icon crypto">
+                            <use xlink:href="./src/assets/sprite.svg#btcCrypto"></use>
+                        </svg>
+                    </div>
+                    <svg class="arrow-icon">
+                        <use xlink:href="./src/assets/sprite.svg#arrowDown"></use>
+                    </svg>
+                </button>
+                <div class="accordion" data-accordion-container>
+                    <button type="button" class="button button-accordion-method" data-redirect-button>
+                        <svg class="alternative-method-icon paypal">
+                            <use xlink:href="./src/assets/sprite.svg#paypal"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="button button-accordion-method" data-redirect-button>
+                        <svg class="alternative-method-icon crypto">
+                            <use xlink:href="./src/assets/sprite.svg#btcCrypto"></use>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+        </section>
+        <section class="policy">
+            <div class="toggle-switch">
+                <label>Automatic Renewal:&nbsp;
+                    <input type="checkbox" class="input-toggle" data-toggler checked>
+                    <span class="status">ON</span>
+                </label>
+            </div>
+            <div class="container-reverse">
+                <ul class="partners-list">
+                    <li><img src="./src/assets/partnerLogos/image%204.svg" alt="logo Visa"></li>
+                    <li><img src="./src/assets/partnerLogos/image%207.svg" alt="logo McAfee"></li>
+                    <li><img src="./src/assets/partnerLogos/image%205.svg" alt="logo Mastercard"></li>
+                    <li><img src="./src/assets/partnerLogos/image%208.svg" alt="logo Norton"></li>
+                    <li><img src="./src/assets/partnerLogos/image%209.svg" alt="logo Secure Shopping"></li>
+                </ul>
+                <article class="policy-agreement">
+                    By clicking “submit order” you are agree to
+                    <a href="#" class="policy-agreement-link">Terms of Service</a> &
+                    <a href="#" class="policy-agreement-link">Recruiting Policy</a> as well as to
+                    <a href="#" class="policy-agreement-link">Refund Policy</a> &
+                    <a href="#" class="policy-agreement-link">Legal Disclaimer</a>
+                </article>
+            </div>
+        </section>
+    </main>
+        <aside class="offer-menu aside-left">
+            <img src="src/assets/product.png" class="product-img" alt="product image"/>
+            <h4 class="tittle-menu-feature">You get all these features:</h4>
+            <ul class="menu-items">
+                <li class="menu-item"><a href="/" class="item-link"><img
+                        src="./src/assets/featuresIcons/clarity_heart-line.svg" alt="icon" class="item-icon">Feature
+                    1</a>
+                    <section class="social-icons-section">
+                        <ul class="social-icons-list">
+                            <li><img src="./src/assets/social/fb%20mess.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/fb.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/hangouts.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/signal%201.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/snapchat.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/inst.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/tiktok.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/Kik.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/tg.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/youtube-3%201.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/zoom.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/whatsapp.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/viber.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/tinder.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/reddit-3%201.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/line.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/wechat.svg" alt="social icon"></li>
+                            <li><img src="./src/assets/social/Skype.svg" alt="social icon"></li>
+                        </ul>
+                    </section>
+                </li>
+                <li class="menu-item"><a href="/" class="item-link"><img
+                        src="./src/assets/featuresIcons/clarity_heart-line.svg" alt="icon" class="item-icon">Feature
+                    2</a></li>
+                <li class="menu-item"><a href="/" class="item-link"><img
+                        src="./src/assets/featuresIcons/clarity_heart-line.svg" alt="icon" class="item-icon">Feature
+                    3</a></li>
+                <li class="menu-item"><a href="/" class="item-link"><img
+                        src="./src/assets/featuresIcons/clarity_heart-line.svg" alt="icon" class="item-icon">Feature
+                    4</a></li>
+                <li class="menu-item"><a href="/" class="item-link"><img
+                        src="./src/assets/featuresIcons/clarity_heart-line.svg" alt="icon" class="item-icon">Feature
+                    5</a></li>
+                <li class="menu-item"><a href="/" class="item-link"><img
+                        src="./src/assets/featuresIcons/clarity_heart-line.svg" alt="icon" class="item-icon">Feature
+                    6</a></li>
+                <li class="menu-item"><a href="/" class="item-link"><img
+                        src="./src/assets/featuresIcons/clarity_heart-line.svg" alt="icon" class="item-icon">Feature
+                    7</a></li>
+                <li class="menu-item"><a href="/" class="item-link"><img
+                        src="./src/assets/featuresIcons/clarity_heart-line.svg" alt="icon" class="item-icon">Feature
+                    8</a></li>
+                <li class="menu-item"><a href="/" class="item-link"><img
+                        src="./src/assets/featuresIcons/clarity_heart-line.svg" alt="icon" class="item-icon">Feature
+                    9</a></li>
+                <li class="menu-item"><a href="/" class="item-link"><img
+                        src="./src/assets/featuresIcons/clarity_heart-line.svg" alt="icon" class="item-icon">Feature 10</a>
+                </li>
+                <li class="menu-item"><a href="/" class="item-link"><img
+                        src="./src/assets/featuresIcons/clarity_heart-line.svg" alt="icon" class="item-icon">Feature 11</a>
+                </li>
+            </ul>
+        </aside>
+        <aside class="sidebar-right">
+            <article class="content">
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                lectus magna Lorem ipsum dolor sit amet.</p>
+            </article>
+        </aside>
+
+</div>
+<footer class="footer">
+    <div class="main-footer-container">
+        <div class="footer-container">
+            <div class="footer-content">
+                <a href="#"><img class="logo" src="./src/assets/Logo.svg" alt="logo" width="67px" height="24px"></a>
+                <p class="footer-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A massa scelerisque
+                    venenatis
+                    orci urna sed lobortis. Vitae cras augue orci cum scelerisque maecenas risus arcu. Gravida suscipit amet
+                    nullam augue vel, non amet pharetra elementum. Leo suspendisse amet condimentum eu gravida eu nisl.
+                    Iaculis
+                    ac turpis nibh mauris mollis cras faucibus gravida sit.
+                </p>
+            </div>
+            <div class="container-menu">
+                <details class="details footer-menu-item" data-details>
+                    <summary class="details-summary">
+                        <span class="details-summary-text">about us</span>
+                        <span class="details-summary-icon arrow-icon-footer"></span>
+                    </summary>
+                    <ul class="details-list">
+                        <li class="details-item"><a href="#" class="details-item-link">Demo</a></li>
+                        <li class="details-item"><a href="#" class="details-item-link">Blog</a></li>
+                        <li class="details-item"><a href="#" class="details-item-link">Features</a></li>
+                        <li class="details-item"><a href="#" class="details-item-link">FAQ</a></li>
+                        <li class="details-item"><a href="#" class="details-item-link">Contact</a></li>
+                    </ul>
+                </details>
+                <details class="details footer-menu-item" data-details>
+                    <summary class="details-summary">
+                        <span class="details-summary-text">service legal terms</span>
+                        <span class="details-summary-icon arrow-icon-footer"></span>
+                    </summary>
+                    <ul class="details-list">
+                        <li class="details-item"><a href="#" class="details-item-link">Eula</a></li>
+                        <li class="details-item"><a href="#" class="details-item-link">refund policy</a></li>
+                        <li class="details-item"><a href="#" class="details-item-link">recurring policy</a></li>
+                        <li class="details-item"><a href="#" class="details-item-link">cookie notice</a></li>
+                        <li class="details-item"><a href="#" class="details-item-link">privacy notice</a></li>
+                    </ul>
+                </details>
+                <details class="details footer-menu-item" data-details>
+                    <summary class="details-summary">
+                        <span class="details-summary-text">partners</span>
+                        <span class="details-summary-icon arrow-icon-footer"></span>
+                    </summary>
+                    <ul class="details-list">
+                        <li class="details-item"><a href="#" class="details-item-link">affiliate program</a></li>
+                        <li class="details-item"><a href="#" class="details-item-link">reseller program</a></li>
+                    </ul>
+                </details>
+                <details class="details footer-menu-item">
+                    <summary class="details-summary">
+                        <span class="details-summary-text">follow us</span>
+                        <ul class="list-icons-footer">
+                            <li class="icon-footer">
+                                <a href="#">
+                                    <svg class="social-icon-footer">
+                                        <use xlink:href="./src/assets/sprite.svg#inst"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="icon-footer">
+                                <a href="#">
+                                    <svg class="social-icon-footer">
+                                        <use xlink:href="./src/assets/sprite.svg#fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="icon-footer">
+                                <a href="#">
+                                    <svg class="social-icon-footer">
+                                        <use xlink:href="./src/assets/sprite.svg#yt"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </summary>
+                </details>
+            </div>
+        </div>
+        <div class="container-bottom">
+            <div class="container-bottom-left">
+                <button class="language-button">
+                    <span>English</span>
+                    <span class="arrow-icon arrow-icon-footer"></span>
+                </button>
+                <a href="#" class="footer-link">term of service</a>
+            </div>
+            <a href="#" class="footer-link">Secure Internet Payments</a>
+        </div>
+        <div class="container-desktop">
+            <ul class="logo-list">
+                <li class="logo-item"><img src="./src/assets/secureLogo/1.svg" alt="logo"></li>
+                <li class="logo-item"><img src="./src/assets/secureLogo/2.svg" alt="logo"></li>
+                <li class="logo-item"><img src="./src/assets/secureLogo/3.svg" alt="logo"></li>
+            </ul>
+            <p class="copyright-text">&copy; 2020 <span class="logo">LOGO</span> | All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+<script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>
