@@ -17,6 +17,6 @@
 
 ## Used:
 
-- [JavaScript]
-- [HTML]
-- [CSS]
+- JavaScript
+- HTML
+- CSS
