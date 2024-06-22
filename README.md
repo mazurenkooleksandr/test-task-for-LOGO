@@ -20,3 +20,4 @@
 - JavaScript
 - HTML
 - CSS
+- Vite
